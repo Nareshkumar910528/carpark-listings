@@ -1,0 +1,56 @@
+.header {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #77002e;
+  padding: 0 10%;
+  font-weight: bold;
+
+  .title {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+}
+
+.table-padding {
+  background-color: #e7e8d1;
+  padding: 25px;
+}
+
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  .table-padding {
+    background-color: #e7e8d1;
+    padding: 25px;
+  }
+
+  th {
+    font-size: 16px;
+  }
+
+  .filter {
+    display: block;
+    width: 50%;
+    margin-block-start: 10px;
+  }
+
+  ::ng-deep {
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+      background-color: #e7e8d1 !important;
+    }
+  }
+}
+
+.paginator {
+  background-color: #a7beae;
+}
+
+.location-selector {
+    margin-block-start: 1rem;
+}
