@@ -99,6 +99,7 @@ export class ListingsComponent implements OnInit, AfterViewInit {
       )
       .subscribe(
         (records: any) => {
+          if (!records) return;
           const fullData = records.carparkCityData[0].items[0].carpark_data;
           fullData.splice(30, fullData.length);
           const data = fullData.filter(
